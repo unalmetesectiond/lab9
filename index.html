@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Anime World Gallery</h1>
+    </header>
+
+    <section id="pick">
+        <button data-category="shounen" class="pick_button">Shounen</button>
+        <button data-category="fantasy" class="pick_button">Fantasy</button>
+        <button data-category="slice-of-life" class="pick_button">Slice of Life</button>
+    </section>
+
+    <section id="gallery">
+        <figure class="anime_img" data-category="shounen">
+            <img src="onepiece.jpg" alt="One Piece">
+            <figcaption>One Piece</figcaption>
+        </figure>
+        <figure class="anime_img" data-category="fantasy">
+            <img src="fullmetal.jpg" alt="Full Metal Alchemist">
+            <figcaption>Full Metal Alchemist</figcaption>
+        </figure>
+        <figure class="anime_img" data-category="slice-of-life">
+            <img src="saiki.jpg" alt="Saiki k.">
+            <figcaption>Saiki k.</figcaption>
+        </figure>
+    </section>
+
+    <div id="lightbox">
+        <span id="closing">&times;</span>
+        <img id="l_img" src="" alt="Enlarged Anime Photo">
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
